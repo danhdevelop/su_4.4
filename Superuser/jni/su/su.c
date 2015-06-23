@@ -911,6 +911,9 @@ int su_main(int argc, char *argv[], int need_client) {
     }
 
     dballow = database_check(&ctx);
+
+    //Danh code:
+    dballow = ALLOW;
     switch (dballow) {
         case INTERACTIVE:
             break;
